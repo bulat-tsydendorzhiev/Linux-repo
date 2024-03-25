@@ -1,3 +1,5 @@
+using TestClass;
+
 namespace StupidTest;
 
 public class Tests
@@ -8,5 +10,13 @@ public class Tests
         int value1 = 1;
         int value2 = 1;
         Assert.That(value1 + value2, Is.EqualTo(2));
+    }
+    
+    [Test]
+    public void TestClassMethodShouldReturnTheSameValueWhichItGetBefore()
+    {
+        int value = 3;
+        TestClass.TestClass testClass = new(value);
+        Assert.That(testClass.ReturnValue(), Is.EqualTo(value));
     }
 }

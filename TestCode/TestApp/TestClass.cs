@@ -2,15 +2,15 @@ namespace TestClass;
 
 public class TestClass
 {
-    public int Value;
+    private int Value;
     
     public TestClass(int value)
     {
         Value = value;
     }
     
-    public int ReturnThree()
+    public int ReturnValue()
     {
-        return 3;
+        return Value;
     }
 }
