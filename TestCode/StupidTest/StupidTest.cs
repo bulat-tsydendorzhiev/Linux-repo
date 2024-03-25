@@ -17,6 +17,6 @@ public class Tests
     {
         int value = 5;
         TestClass.TestClass testClass = new(value);
-        Assert.That(testClass.ReturnValue(), Is.EqualTo(value));
+        Assert.That(testClass.ReturnValue(), Is.EqualTo(value - 1));
     }
 }
